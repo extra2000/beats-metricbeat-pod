@@ -1,0 +1,29 @@
+name: beats_metricbeat_box
+logging.level: warning
+logging.to_files: true
+logging.files:
+  path: /usr/share/metricbeat/logs
+  name: metricbeat
+  keepfiles: 7
+  permissions: "0644"
+metricbeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+processors:
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_fields:
+      fields:
+        organization_name: "extra2000"
+        project_name: "home_sensors"
+output.logstash:
+  hosts: [logstash-pod.lan:5044]
+  ssl.verification_mode: "full"
+  ssl.certificate_authorities: ["/usr/share/metricbeat/elastic-ca.pem"]
+  ssl.certificate: "/usr/share/metricbeat/beats-certificate-bundle/beats/beats.crt"
+  ssl.key: "/usr/share/metricbeat/beats-certificate-bundle/beats/beats.key"
+monitoring.enabled: false
+monitoring.cluster_uuid: "cluster-uuid"
+http.enabled: true
+http.host: localhost
+http.port: 5066

@@ -1,0 +1,18 @@
+# Module: system
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/7.16/metricbeat-module-system.html
+
+- module: system
+  enabled: true
+  metricsets:
+    - cpu
+    - load
+    - process
+    - process_summary
+    - core
+    - filesystem
+    - fsstat
+    - uptime
+  period: 10s
+  processes: ['.*']
+  cpu.metrics: ["percentages", "normalized_percentages"]
+  core.metrics: ["percentages"]

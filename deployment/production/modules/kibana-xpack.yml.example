@@ -1,0 +1,12 @@
+# Module: kibana
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/7.16/metricbeat-module-kibana.html
+
+- module: kibana
+  xpack.enabled: true
+  period: 10s
+  hosts: ["https://localhost:5601"]
+  basepath: ""
+  username: remote_monitoring_user
+  password: abcde12345
+  ssl.verification_mode: "full"
+  ssl.certificate_authorities: ["/usr/share/metricbeat/elastic-ca.pem"]

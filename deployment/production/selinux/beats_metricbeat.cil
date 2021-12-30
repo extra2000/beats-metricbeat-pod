@@ -1,0 +1,6 @@
+(block beats_metricbeat
+    (blockinherit container)
+    (blockinherit restricted_net_container)
+    (allow process unreserved_port_t ( tcp_socket ( name_connect name_bind )))
+    (allow process wap_wsp_port_t ( tcp_socket ( name_connect )))
+)
