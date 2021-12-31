@@ -6,8 +6,11 @@
   metricsets:
     - cpu
     - load
+    - memory
+    - network
     - process
     - process_summary
+    - socket_summary
     - core
     - filesystem
     - fsstat
