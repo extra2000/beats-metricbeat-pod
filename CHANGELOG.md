@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.0.0...v1.0.1) (2022-01-02)
+
+
+### Fixes
+
+* **modules/system:** add `memory`, `network`, and `socket_summary` metricsets ([a665a42](https://github.com/extra2000/beats-metricbeat-pod/commit/a665a42de3f450f6b2eee99f6c886bdcee7b880e))
+
 ## 1.0.0 (2021-12-31)
 
 
