@@ -4,8 +4,10 @@
 - module: elasticsearch
   xpack.enabled: true
   period: 10s
-  hosts: ["https://localhost:9200"]
+  hosts:
+    - "https://localhost:9200"
   username: remote_monitoring_user
   password: abcde12345
   ssl.verification_mode: "full"
-  ssl.certificate_authorities: ["/usr/share/metricbeat/elastic-ca.pem"]
+  ssl.certificate_authorities:
+    - "/usr/share/metricbeat/elastic-ca.pem"

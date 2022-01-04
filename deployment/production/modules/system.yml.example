@@ -16,6 +16,10 @@
     - fsstat
     - uptime
   period: 10s
-  processes: ['.*']
-  cpu.metrics: ["percentages", "normalized_percentages"]
-  core.metrics: ["percentages"]
+  processes:
+    - '.*'
+  cpu.metrics:
+    - "percentages"
+    - "normalized_percentages"
+  core.metrics:
+    - "percentages"

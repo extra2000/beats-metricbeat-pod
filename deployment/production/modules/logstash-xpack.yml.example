@@ -4,4 +4,5 @@
 - module: logstash
   xpack.enabled: true
   period: 10s
-  hosts: ["localhost:9600"]
+  hosts:
+    - "localhost:9600"
