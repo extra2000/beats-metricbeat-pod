@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.0.1...v1.0.2) (2022-01-04)
+
+
+### Code Refactoring
+
+* **modules:** restructure `list` ([29b0beb](https://github.com/extra2000/beats-metricbeat-pod/commit/29b0bebb3e385b71196599dd3f3729695ecc4c29))
+
 ### [1.0.1](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.0.0...v1.0.1) (2022-01-02)
 
 
