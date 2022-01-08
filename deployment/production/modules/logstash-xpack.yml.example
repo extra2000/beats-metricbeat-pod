@@ -3,6 +3,6 @@
 
 - module: logstash
   xpack.enabled: true
-  period: 10s
+  period: 300s
   hosts:
     - "localhost:9600"

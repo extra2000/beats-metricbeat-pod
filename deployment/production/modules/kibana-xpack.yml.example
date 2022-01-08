@@ -3,7 +3,7 @@
 
 - module: kibana
   xpack.enabled: true
-  period: 10s
+  period: 300s
   hosts:
     - "https://localhost:5601"
   basepath: ""

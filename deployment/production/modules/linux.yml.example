@@ -3,7 +3,7 @@
 
 - module: linux
   enabled: true
-  period: 10s
+  period: 300s
   metricsets:
     - memory
     - iostat

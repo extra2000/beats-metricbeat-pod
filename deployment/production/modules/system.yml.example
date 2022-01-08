@@ -15,7 +15,7 @@
     - filesystem
     - fsstat
     - uptime
-  period: 10s
+  period: 300s
   processes:
     - '.*'
   cpu.metrics:

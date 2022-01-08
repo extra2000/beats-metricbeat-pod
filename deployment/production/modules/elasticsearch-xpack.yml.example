@@ -3,7 +3,7 @@
 
 - module: elasticsearch
   xpack.enabled: true
-  period: 10s
+  period: 300s
   hosts:
     - "https://localhost:9200"
   username: remote_monitoring_user
