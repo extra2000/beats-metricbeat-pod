@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.0.2...v1.1.0) (2022-02-21)
+
+
+### Features
+
+* **dockerfile:** upgrade Metricbeat from `7.16.2` to `8.0.0` ([f4c89bc](https://github.com/extra2000/beats-metricbeat-pod/commit/f4c89bc74985c5372ff21a0f31fc7a03a64debe5))
+
+
+### Performance Improvements
+
+* **modules:** reduce check frequency from every 10 seconds to every 300 seconds ([df46671](https://github.com/extra2000/beats-metricbeat-pod/commit/df46671fce4669666664cb80695381c493d60487))
+
 ### [1.0.2](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.0.1...v1.0.2) (2022-01-04)
 
 
