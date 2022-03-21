@@ -10,4 +10,4 @@
   password: abcde12345
   ssl.verification_mode: "full"
   ssl.certificate_authorities:
-    - "/usr/share/metricbeat/elastic-ca.pem"
+    - "/usr/share/metricbeat/elastic-ca.crt"

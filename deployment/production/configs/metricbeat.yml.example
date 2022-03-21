@@ -19,9 +19,9 @@ processors:
 output.logstash:
   hosts: [logstash-pod.lan:5044]
   ssl.verification_mode: "full"
-  ssl.certificate_authorities: ["/usr/share/metricbeat/elastic-ca.pem"]
-  ssl.certificate: "/usr/share/metricbeat/beats-certificate-bundle/beats/beats.crt"
-  ssl.key: "/usr/share/metricbeat/beats-certificate-bundle/beats/beats.key"
+  ssl.certificate_authorities: ["/usr/share/metricbeat/elastic-ca.crt"]
+  ssl.certificate: "/usr/share/metricbeat/beats.crt"
+  ssl.key: "/usr/share/metricbeat/beats.key"
 monitoring.enabled: false
 monitoring.cluster_uuid: "cluster-uuid"
 http.enabled: true

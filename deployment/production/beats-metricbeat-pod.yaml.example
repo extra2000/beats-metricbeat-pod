@@ -37,10 +37,13 @@ spec:
     - mountPath: /usr/share/metricbeat/modules.d
       name: metricbeat-modules
       readOnly: true
-    - mountPath: /usr/share/metricbeat/beats-certificate-bundle
-      name: beats-certificate-bundle
+    - mountPath: /usr/share/metricbeat/beats.crt
+      name: metricbeat-ssl-crt
       readOnly: true
-    - mountPath: /usr/share/metricbeat/elastic-ca.pem
+    - mountPath: /usr/share/metricbeat/beats.key
+      name: metricbeat-ssl-key
+      readOnly: true
+    - mountPath: /usr/share/metricbeat/elastic-ca.crt
       name: elastic-ca
       readOnly: true
     - mountPath: /usr/share/metricbeat/data
@@ -56,10 +59,13 @@ spec:
       path: ./modules
   - name: elastic-ca
     hostPath:
-      path: ./secrets/elastic-ca.pem
-  - name: beats-certificate-bundle
+      path: ./secrets/elastic-ca.crt
+  - name: metricbeat-ssl-crt
     hostPath:
-      path: ./secrets/beats-certificate-bundle
+      path: ./secrets/beats.crt
+  - name: metricbeat-ssl-key
+    hostPath:
+      path: ./secrets/beats.key
   - name: metricbeat-data
     persistentVolumeClaim:
       claimName: beats-metricbeat-data
