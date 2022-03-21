@@ -52,7 +52,7 @@ Create config files and fix permission:
     cp -v configs/metricbeat.yml{.example,}
     chmod go-w configs/metricbeat.yml
 
-Create modules:
+Create modules and fix permission:
 
 .. code-block:: bash
 
@@ -62,6 +62,7 @@ Create modules:
     cp -v modules/elasticsearch-xpack.yml{.example,}
     cp -v modules/logstash-xpack.yml{.example,}
     cp -v modules/kibana-xpack.yml{.example,}
+    chmod go-w modules/*
 
 .. note::
 
