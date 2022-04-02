@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.0.0](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.1.0...v2.0.0) (2022-04-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ssl:** mount point for SSL certs has changed
+
+### Features
+
+* **dockerfile:** upgrade Metricbeat from `8.0.0` to `8.1.0` ([0f320bb](https://github.com/extra2000/beats-metricbeat-pod/commit/0f320bb49d668c81e90c70ed34e8b79528b0799e))
+
+
+### Code Refactoring
+
+* **ssl:** change SSL style to OpenSSL ([1ec835c](https://github.com/extra2000/beats-metricbeat-pod/commit/1ec835c94cbfb0ecb10428c2b25a31ee2934444f))
+
+
+### Documentations
+
+* **deployment:** fix permissions for `modules/` ([3bf9231](https://github.com/extra2000/beats-metricbeat-pod/commit/3bf9231c072113a62f44605abd902c5b439e56ef))
+* **deployment:** remove instructions for cert bundle ([a9558fa](https://github.com/extra2000/beats-metricbeat-pod/commit/a9558fa6e25b21af88a2584aa53c323bca990dcb))
+
 ## [1.1.0](https://github.com/extra2000/beats-metricbeat-pod/compare/v1.0.2...v1.1.0) (2022-02-21)
 
 
