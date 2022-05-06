@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/extra2000/beats-metricbeat-pod/compare/v2.1.0...v2.2.0) (2022-05-06)
+
+
+### Features
+
+* **dockerfile:** update Metricbeat from `8.1.2` to `8.2.0` ([302ac67](https://github.com/extra2000/beats-metricbeat-pod/commit/302ac67c2f1929d62392192341ae1c2873636f85))
+
 ## [2.1.0](https://github.com/extra2000/beats-metricbeat-pod/compare/v2.0.0...v2.1.0) (2022-04-06)
 
 
